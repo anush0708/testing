@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import SummaryForm from "./pages/summary/SummaryForm";
+import Options from "./pages/entry/Options";
 
 function App() {
   const [btnColor, setButtonColor] = useState("red");
@@ -17,6 +18,7 @@ function App() {
         Change to {newbtncolor}
       </button>
       <input type="checkbox" onClick={() => setStatus(!status)} />
+      <Options optionType="scoops" />
       <SummaryForm />
     </div>
   );
